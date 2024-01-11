@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors');
 const path = require("path")
-app.use('/images//', express.static('./images'))
+app.use('/image/', express.static('./image'))
 app.use(express.static(path.join(__dirname + "/public")))
 app.use(cors({
     origin: 'http://localhost:3000'
